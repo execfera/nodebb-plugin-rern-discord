@@ -1,0 +1,15 @@
+{
+	"id": "nodebb-plugin-rern-discord",
+	"name": "Discord Notifications for RE:RN on NodeBB",
+	"description": "Send notifications of new posts and topics via Discord webhook.",
+	"url": "",
+	"library": "./library.js",
+	"hooks": [
+		{ "hook": "static:app.load", "method": "init" },
+		{ "hook": "filter:admin.header.build", "method": "adminMenu" },
+		{ "hook": "action:post.save", "method": "postSave"}
+	],
+	"templates": "./public/templates",
+	"languages": "./languages",
+	"settingsRoute": "/admin/plugins/discord-notification"
+}

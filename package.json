@@ -1,0 +1,9 @@
+{
+  "name": "nodebb-plugin-rern-discord",
+  "version": "1.0.0",
+  "main": "library.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
